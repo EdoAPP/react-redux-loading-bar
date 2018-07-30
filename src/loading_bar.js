@@ -1,7 +1,6 @@
-import React, { Component } from 'react'
-import { polyfill } from 'react-lifecycles-compat'
-import { bool, number, object, string } from 'prop-types'
-import { connect } from 'react-redux'
+import React, { Component } from 'react';
+import { bool, number, object, string } from 'prop-types';
+import { connect } from 'react-redux';
 
 import { DEFAULT_SCOPE } from './loading_bar_ducks'
 
@@ -195,7 +194,6 @@ const mapStateToProps = (state, ownProps) => ({
   loading: state.loadingBar[ownProps.scope || DEFAULT_SCOPE],
 })
 
-polyfill(LoadingBar)
 const ConnectedLoadingBar = connect(mapStateToProps)(LoadingBar)
 
 export {

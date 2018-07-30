@@ -13,8 +13,6 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactLifecyclesCompat = require('react-lifecycles-compat');
-
 var _propTypes = require('prop-types');
 
 var _reactRedux = require('react-redux');
@@ -227,7 +225,6 @@ var mapStateToProps = function mapStateToProps(state, ownProps) {
   };
 };
 
-(0, _reactLifecyclesCompat.polyfill)(LoadingBar);
 var ConnectedLoadingBar = (0, _reactRedux.connect)(mapStateToProps)(LoadingBar);
 
 exports.LoadingBar = LoadingBar;
