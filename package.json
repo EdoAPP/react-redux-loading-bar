@@ -71,7 +71,6 @@
     "redux": "^3.5.2"
   },
   "dependencies": {
-    "prop-types": "^15.5.6",
-    "react-lifecycles-compat": "^3.0.2"
+    "prop-types": "^15.5.6"
   }
 }
